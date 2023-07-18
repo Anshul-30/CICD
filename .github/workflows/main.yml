@@ -28,7 +28,7 @@
                 cd android && ./gradlew assembleRelease
 
             - name: upload Artifact
-              uses: actions/checkout@v1
+              uses: actions/upload-artifact@v1
               with: 
                 name: app-release.apk
                 path: android/app/build/output/apk/release
